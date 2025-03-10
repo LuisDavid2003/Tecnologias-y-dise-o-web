@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronóstico del Clima</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav>
+        <h1>Dashboard del Clima</h1>
+    </nav>
+
+    <div class="container">
+        <form id="weatherForm">
+            <input type="text" id="cityInput" placeholder="Ingrese una ciudad" required>
+            <button type="submit">Consultar</button>
+        </form>
+
+        <div id="weatherData">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="condition"></p>
+        </div>
+
+        <canvas id="weatherChart"></canvas>
+    </div>
+
+    <footer>
+        <p>© 2025 Dashboard del Clima</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
