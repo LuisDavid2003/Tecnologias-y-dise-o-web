@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     navbar.innerHTML = `
         <nav class="navbar">
-            <div class="logo">Mi Proyecto</div>
+            <div class="logo">Lista de productos</div>
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="#">Productos</a></li>
