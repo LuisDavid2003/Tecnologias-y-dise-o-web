@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div id="navbar"></div> <!-- Aquí se insertará el navbar dinámicamente -->
+
+    <main>
+        <h1>Productos en JavaScript</h1>
+        <p>Aquí una lista de productos en JavaScript</p>
+        <ol id="lista"></ol>
+    </main>
+
+    <div id="footer"></div> <!-- Aquí se insertará el footer dinámicamente -->
+
+    <!-- Scripts para cargar el navbar y footer -->
+    <script src="utils/navbar.js"></script>
+    <script src="utils/footer.js"></script>
+
+    <script>
+        let productos = ["Leche", "Huevo", "Jugo", "Refresco", "Cereal", "Detergente"];
+        let lista = document.getElementById("lista");
+
+        for (let i = 0; i < productos.length; i++) { // Corregido el bucle
+            let item = document.createElement("li");
+            item.textContent = productos[i];
+            lista.appendChild(item);
+        }
+    </script>
+
+</body>
+</html>
